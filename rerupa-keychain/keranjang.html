@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Pilihan - Rerupa Keychain</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container navbar">
+            <div class="nav-logo">Rerupa Keychain</div>
+            <div class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html">Beranda</a>
+                <a href="tentang.html">Tentang Kami</a>
+                <a href="produk.html">Produk</a>
+                <a href="keranjang.html">Keranjang</a>
+                <a href="faq.html">FAQ</a>
+                <a href="#" id="cart-link" style="position: relative;">
+                    Keranjang <span id="cart-count" style="
+                        position: absolute;
+                        top: -8px;
+                        right: -10px;
+                        background: #C2377A;
+                        color: white;
+                        border-radius: 50%;
+                        padding: 2px 6px;
+                        font-size: 0.8rem;
+                        display: none;
+                    ">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="keranjang">
+        <div class="container">
+            <h1>Keranjang Pilihan Anda</h1>
+            
+            <div id="cart-empty">
+                <p>Keranjang Anda masih kosong.</p>
+                <a href="produk.html" class="btn-primary">Lihat Produk</a>
+            </div>
+            
+            <div id="cart-items">
+                <!-- Cart items will be injected by JavaScript -->
+            </div>
+            
+            <div id="cart-total">
+                <!-- Total will be injected by JavaScript -->
+            </div>
+            
+            <div class="cart-notes">
+                <h3>Catatan Pesanan</h3>
+                <textarea id="order-notes" placeholder="Tambahkan catatan khusus untuk pesanan Anda (alamat pengiriman, instruksi khusus, dll.)" rows="3"></textarea>
+            </div>
+            
+            <div class="cart-actions">
+                <button class="btn-secondary" onclick="window.history.back()">Kembelanja</button>
+                <button class="btn-primary" onclick="sendWhatsAppSummary()">Kirim Ringkasan via WhatsApp</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Beranda</a>
+                <a href="tentang.html">Tentang Kami</a>
+                <a href="produk.html">Produk</a>
+                <a href="keranjang.html">Keranjang</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+            <div>
+                <p>&copy; 2026 Rerupa Keychain. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

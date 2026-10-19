@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rerupa Keychain</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container navbar">
+            <div class="nav-logo">Rerupa Keychain</div>
+            <div class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html">Beranda</a>
+                <a href="tentang.html">Tentang Kami</a>
+                <a href="produk.html">Produk</a>
+                <a href="keranjang.html">Keranjang</a>
+                <a href="faq.html">FAQ</a>
+                <a href="#" id="cart-link" style="position: relative;">
+                    Keranjang <span id="cart-count" style="
+                        position: absolute;
+                        top: -8px;
+                        right: -10px;
+                        background: #C2377A;
+                        color: white;
+                        border-radius: 50%;
+                        padding: 2px 6px;
+                        font-size: 0.8rem;
+                        display: none;
+                    ">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Rerupa Keychain</h1>
+            <p>"Kecil di tas, besar gayanya"</p>
+            <a href="produk.html" class="btn-primary">Lihat Produk</a>
+        </div>
+    </section>
+
+    <section class="keunggulan">
+        <div class="container">
+            <h2>Keunggulan Produk Kami</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">🎀</div>
+                    <h3>Desain Unik & Imut</h3>
+                    <p>Setiap keychain dirancang dengan penuh kesukaan dan perhatian pada detail.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">💖</div>
+                    <h3>Material Berkualitas</h3>
+                    <p>Menggunakan material yang tahan lama dan nyaman digunakan sehari-hari.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">✨</div>
+                    <h3>Personalisasi Gratis</h3>
+                    <p>Buat keychain yang benar-benar Anda dengan opsi customisasi.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📦</div>
+                    <h3>Paket Aman & Rapi</h3>
+                    <p>Setiap pesanan dikemas dengan rapi dan siap untuk dikirim atau dihadiahkan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-products">
+        <div class="container">
+            <h2>Produk Unggulan</h2>
+            <div class="product-grid" id="featured-products-grid">
+                <!-- Products will be injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <section class="banner">
+        <div class="container">
+            <h2>Pesan Custom Sekarang!</h2>
+            <p>Buat keychain dengan desain sendiri, hanya dengan mengirimkan gambar atau deskripsi.</p>
+            <a href="produk.html" class="btn-primary">Pesan Custom</a>
+        </div>
+    </section>
+
+    <section class="story">
+        <div class="container">
+            <h2>Cerita Kami</h2>
+            <p class="story-text" id="story-text">
+                Rerupa Keychain mulai dari hobi kecil yang menjadi pasion. Kami percaya bahwa aksesoris kecil bisa menambah semangat dan keceriaan dalam hari-hari Anda.
+            </p>
+            <p><em>*Cerita di atas dapat diganti dengan cerita asli usaha Anda*</em></p>
+        </div>
+    </section>
+
+    <section class="testimonial">
+        <div class="container">
+            <h2>Testimoni Pelanggan</h2>
+            <div class="testimonial-content">
+                <p>"Keychainnya sangat lucu dan kualitasnya bagus! Sangat recomended untuk koleksi atau hadiah."</p>
+                <p class="testimonial-author">- Andi, Pelanggan Setia</p>
+            </div>
+            <p><em>*Ganti dengan testimoni asli dari pelanggan Anda*</em></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Beranda</a>
+                <a href="tentang.html">Tentang Kami</a>
+                <a href="produk.html">Produk</a>
+                <a href="keranjang.html">Keranjang</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+            <div>
+                <p>&copy; 2026 Rerupa Keychain. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/featured.js"></script>
+</body>
+</html>
