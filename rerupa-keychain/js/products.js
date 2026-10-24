@@ -6,7 +6,7 @@ const products = [
     price: 7000,
     category: "bunga",
     description: "Keychain lucu berbentuk bunga dengan varian warna yang menarik.",
-    image: "img/placeholder.svg", // Placeholder - replace with actual product image
+    image: "img/keychain-bunga.jpg",
     variants: ["Bunga 1 Warna", "Bunga Wavy", "Bunga 2 Warna"],
     labels: ["Terlaris"],
     links: {
@@ -20,7 +20,7 @@ const products = [
     price: 7000,
     category: "inisial",
     description: "Keychain personalisasi dengan huruf pilihan A-Z.",
-    image: "img/placeholder.svg", // Placeholder
+    image: "img/keychain-inisial.jpg",
     variants: [], // Will be generated A-Z
     labels: [],
     links: {
@@ -34,7 +34,7 @@ const products = [
     price: 15000,
     category: "karakter",
     description: "Keychain karakter custom sesuai desain pembeli.",
-    image: "img/placeholder.svg", // Placeholder
+    image: "img/keychain-karakter.jpg",
     variants: [],
     labels: ["Custom"],
     links: {
@@ -48,7 +48,7 @@ const products = [
     price: 12000,
     category: "cermin",
     description: "Keychain dengan cermin mini, lucu dan praktis.",
-    image: "img/placeholder.svg", // Placeholder
+    image: "img/keychain-cermin.jpg",
     variants: ["Cermin Bunga", "Cermin Beruang", "Cermin Bunny"],
     labels: [],
     links: {
@@ -59,7 +59,7 @@ const products = [
 ];
 
 // Generate A-Z variants for Inisial product
-products[1].varians = Array.from({length: 26}, (_, i) => String.fromCharCode(65 + i)); // A-Z
+products[1].variants = Array.from({length: 26}, (_, i) => String.fromCharCode(65 + i)); // A-Z
 
 // Export for use in other scripts (if using modules, but we'll attach to window)
 window.products = products;
