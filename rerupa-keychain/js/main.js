@@ -280,7 +280,7 @@ document.addEventListener('DOMContentLoaded', () => {
     message += 'Terima kasih!';
     
     // Replace with actual WhatsApp number
-    const whatsappNumber = '6281234567890'; // Placeholder
+    const whatsappNumber = '6289662533518'; // Placeholder
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };
